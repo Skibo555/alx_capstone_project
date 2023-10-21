@@ -1,0 +1,109 @@
+.header-box {
+    width: 1440px;
+    height: 66px;
+    flex-shrink: 0;
+    background-color: antiquewhite;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    margin-left: 2%;
+}
+
+.menu {
+    display: flex;
+    margin-right: 7%;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+main {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 7%;
+    margin-right: 1%;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+}
+
+#topic-sec-for-articles {
+    text-align: left;
+}
+
+.recent-post {
+    display: block;
+    background: burlywood;
+    height: 100vh;
+
+}
+
+#trends {
+    align-content: center;
+}
+
+#trends {
+    text-indent: 5%;
+}
+
+#topic2 {
+    text-indent: 10%;
+}
+
+#the-article {
+    display: block;
+    width: 70%;
+    text-justify: newspaper;
+}
+
+footer {
+    display: flex;
+    background: black;
+}
+
+#disclaimer {
+    margin-left: 0.5%;
+
+}
+
+#disclaimer-div {
+    color: red;
+    font-size: small;
+    text-align: center;
+}
+
+.footer-text #disclaimer {
+    display: flex;
+}
+
+#social-media-handles {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+}
+
+#enquiry {
+    text-align: center;
+    color: white;
+}
