@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}">
+</head>
+
+<body>
+
+    <header class="header-box">
+        <div class="logo">My logo</div>
+        <nav class="menu">
+            <ul>
+                <li id="home"> <a href="/">Home</a></li>
+                <li id="posts"> <a href="/post">Posts</a></li>
+                <li id="market-place"> <a href="/marketplace">Market Place</li>
+                <li id="farmer-corner"> <a href="/farmerscorner">Farmer's Corner</li>
+                <li id="about-us"><a href="/about">About Us</li>
+                <li id="conatact"> <a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <div class="articles-hearder">
+            <p id="articles">Articles Section</p>
+            <div><br><br><br></div>
+            <div class="search_bar">
+                <form method="GET" action="/search">
+                    <input type="text" name="query" placeholder="Search for posts">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <section class="articles-div">
+                <h3 id="news-articles">News Articles</h3>
+            </section>
+            <b id="title-placeholder">Placeholder Text</b>
+            <div class="articles-container">
+                <style>
+                    .articles-hearder {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-left: 10%;
+                        margin-right: 10%;
+                    }
+                </style>
+                <div id="news">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident,
+                        sunt
+                        in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <b id="title-placeholder">Placeholder Text</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident,
+                        sunt
+                        in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <b id="title-placeholder">Placeholder Text</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident,
+                        sunt
+                        in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <b id="title-placeholder">Placeholder Text</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident,
+                        sunt
+                        in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <b id="title-placeholder">Placeholder Text</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident,
+                        sunt
+                        in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <b id="title-placeholder">Placeholder Text</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident,
+                        sunt
+                        in culpa qui officia deserunt mollit anim id est laborum.</p><b
+                        id="title-placeholder">Placeholder
+                        Text</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident,
+                        sunt
+                        in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                </section>
+                <aside class="online-members">
+                    <h4 id="online">Members Online</h4>
+                    <p id="member-username">Member's Username</p>
+                    <p id="member-username">Member's Username</p>
+                    <p id="member-username">Member's Username</p>
+                    <p id="member-username">Member's Username</p>
+                    <p id="member-username">Member's Username</p>
+                    <p id="member-username">Member's Username</p>
+                    <p id="member-username">Member's Username</p>
+                    <p id="member-username">Member's Username</p>
+
+                </aside>
+            </div>
+    </main>
+    <div id="empty-for-space">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <footer class="footer-div">
+        <div class="footer-text">
+            <nav id="social-media-handles">
+                <p id="social-icons"> Follow us on: <a href="#">Twitter</a> <a href="#">Facebook</a> <a
+                        href="#">Instagram</a>
+                </p>
+                <p id="contact-us"><a href="#"> Contact Us</a></p>
+            </nav>
+            <div id="disclaimer-div">
+                <p id="disclaimer">DISCLAIMER: The views and opinions expressed in the articles and comments on this
+                    blog are solely those of the respective authors and do not necessarily reflect the official policy
+                    or position of Wink. We do not warrant the accuracy, completeness, or usefulness of any information
+                    presented. Reliance on any content provided is solely at your own risk. Wink shall not be held
+                    responsible for any harmful, inaccurate,
+                    or inappropriate content posted by users. If you have concerns about specific content, please
+                    contact us for further assistance.</p>
+            </div>
+            <div id="enquiry">
+                <p id="for-enquiry">For any inquiries, please contact <a href="#">yonwatodejulius@gmail.com</a> </p>
+                <p id="copyright">Copyright &copy; Wink 2023
+                    All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

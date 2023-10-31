@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='contact-us.css') }}">
+
+</head>
+
+<body>
+    <header class="header-box">
+        <div class="logo">My logo</div>
+        <nav class="menu">
+            <ul>
+                <li id="home"> <a href="/">Home</a></li>
+                <li id="posts"> <a href="/post">Posts</a></li>
+                <li id="market-place"> <a href="/marketplace">Market Place</li>
+                <li id="farmer-corner"> <a href="/farmerscrner">Farmer's Corner</li>
+                <li id="about-us"><a href="/about">About Us</li>
+                <li id="conatact"> <a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="contact-form">
+        <legend>Contact Form</legend>
+        <fieldset>
+            <form action="/submit" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required> <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required> <br>
+                <label for="message">Message:</label>
+                <textarea type="text" id="message" name="message" required></textarea>
+                </textarea>
+                <button type="submit">Send</button>
+        </fieldset>
+        </form>
+
+    </div>
+</body>
+
+</html>

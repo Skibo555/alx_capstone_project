@@ -1,0 +1,17 @@
+<h1>{{ post.title }}</h1>
+<p>{{ post.content }}</p>
+
+<h2>Comments</h2>
+<ul>
+    {% for comment in comments %}
+    <li>{{ comment.content }} - {{ comment.user.username }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Add a Comment</h2>
+<form method="POST" action="">
+    {{ form.hidden_tag() }}
+    {{ form.content.label }}
+    {{ form.content(class="form-control") }}
+    {{ form.submit(class="btn btn-primary") }}
+</form>
