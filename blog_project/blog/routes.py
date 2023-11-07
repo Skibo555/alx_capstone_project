@@ -8,6 +8,8 @@ from .forms import CommentForm
 
 #blueprint = Blueprint('blueprint', __name__)
 
+# Route to the homepage.
+
 
 @app.route('/')
 def home():
